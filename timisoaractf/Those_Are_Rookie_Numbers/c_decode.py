@@ -4,6 +4,6 @@ n = 5890043378015205982968418100627666963307382032076121633029174573479254662524
 
 p = pow(c,d,n)
 size = len("{:02x}".format(n)) // 2
-text = "".join([chr((number >> j) & 0xff) for j in reversed(range(0, size << 3, 8))])
+text = "".join([chr((p >> j) & 0xff) for j in reversed(range(0, size << 3, 8))])
 
 print(text.lstrip("\x00"))
