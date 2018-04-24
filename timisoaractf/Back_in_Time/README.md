@@ -5,7 +5,7 @@ encrypt.py
 ciphertext.txt
 
 On reading the python code we can easily know that;
-Lowercase chars have been subtituted by other Lowercase char.
+Lowercase chars have been substituted by other Lowercase char.
 All other are where they are suppose to be.
 
 We even know flag has timctf in start.
