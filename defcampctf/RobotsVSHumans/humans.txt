@@ -1,0 +1,14 @@
+                            
+/* TEAM */
+
+                            
+Your title: RobotsVSHumans
+
+                            
+Location: Bcharest, Romania
+
+							
+/* THANKS */
+
+							
+Name: DCTF{1091d2144edbffaf5dd265cb7c93e799c4659eb16ee79735b3bd6e09dd6e791f}
