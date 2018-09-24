@@ -1,2 +1,2 @@
-*/*.css linguist-vendored
-*/*.html linguist-vendored
+defcampctf/*/*.css linguist-vendored
+defcampctf/*/*.html linguist-vendored
