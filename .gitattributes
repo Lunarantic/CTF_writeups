@@ -1,2 +1,2 @@
-defcampctf/*/*.css
-defcampctf/*/*.html
+*/*.css linguist-vendored
+*/*.html linguist-vendored
