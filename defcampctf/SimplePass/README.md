@@ -6,7 +6,7 @@
 It this binary we need to find the write password to get the flag
 
 It is 64-bit linux ELF
-```
+```Shell
 $ file SimplePass
 SimplePass: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=caf8649b898078889978fa4a3be29437124c214c, not stripped
 ```
@@ -33,14 +33,14 @@ This function will convert int to string which right after all calculations from
 So I target to get that int from this function's input
 
 That's what I did using gdb
-```
+```GDB
 $ gdb ./SimplePass
 (gdb) breakpoint main
 Breakpoint 1 in main()
 (gdb) disassemble
 // find address of instruction which calls function for compare *<_ZNSt7__cxx119to_stringEi>*
 (gdb) breakpoint *(address found)
-Breakpoint 2 in main<+235>()
+Breakpoint 2 in <main+216>()
 (gdb) run
 Breakpoint 1 hit
 (gdb) continue
@@ -49,7 +49,7 @@ Password?
 Breakpoint 2 hit
 ```
 These instructions provide input of one string pointer and one integer given in esi and rdi registers for *int_to_string*
-```
+```GDB
 <main+204>:	lea    -0x40(%rbp),%rax
 <main+208>:	mov    -0x64(%rbp),%edx
 <main+211>:	mov    %edx,%esi
@@ -61,7 +61,7 @@ esi contains integer number that we need to give for success
 This is because it uses mov instruction and not lea which gives address *pointer* for string
 
 So we print the number and test in binary
-```
+```GDB
 (gdb) print $edx
 $1 = -366284240
 ```
