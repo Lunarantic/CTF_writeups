@@ -1,6 +1,6 @@
 # Central Savings Account
 
-> I seem to have forgotten the password for my savings account. What am I gonna do?
+> I seem to have forgotten the password for my [savings account](Central%20Savings%20Account.html). What am I gonna do?
 
 > The flag is not in standard flag format.
 
