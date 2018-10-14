@@ -1,2 +1,5 @@
 defcampctf/*/*.css linguist-vendored
 defcampctf/*/*.html linguist-vendored
+tjctf/*/*.js linguist-vendored
+tjctf/*/*.css linguist-vendored
+tjctf/*/*.html linguist-vendored
