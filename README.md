@@ -27,5 +27,6 @@ Contains write-ups for all kinds of CTFs played and practiced in
 |Level|                          Challenge                         |
 |:---:|:----------------------------------------------------------:|
 |  I  |[Central Savings Account](tjctf/Central%20Savings%20Account)|
+|  I  |          [Cookie Monster](tjctf/Cookie%20Monster)          |
 |  I  |         [RobotsVSHumans](defcampctf/RobotsVSHumans)        |
 |  II |         [PasswordPolicy](defcampctf/PasswordPolicy)        |
